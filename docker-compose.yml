@@ -79,7 +79,10 @@ services:
       - smartcity
   spark-worker-1:
     <<: *spark-common
+    container_name: spark-worker-1
   spark-worker-2:
     <<: *spark-common
+    container_name: spark-worker-2
+
 networks:
   smartcity:
